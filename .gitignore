@@ -1,0 +1,6 @@
+.idea/
+.gradle/
+out/
+build/
+gradle/
+jsf-shiro.iml
