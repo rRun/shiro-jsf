@@ -1,6 +1,31 @@
+<<<<<<< HEAD
 .idea/
 .gradle/
 out/
 build/
 gradle/
 jsf-shiro.iml
+=======
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> e5a15a9930104d6adcbabf8d796bf08c6488952d
