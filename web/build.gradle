@@ -1,0 +1,38 @@
+apply plugin:"war"
+apply plugin:"java"
+
+def versionSpring = "4.3.10.RELEASE"
+
+dependencies{
+    // 依赖 core 模块
+    compile project(":core")
+    //jsf框架
+    compile "com.sun.faces:jsf-api:2.+"
+    compile "com.sun.faces:jsf-impl:2.+"
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+    compile group: 'com.sun.facelets', name: 'jsf-facelets', version: '1.1.14'
+    compile 'javax.el:javax.el-api:3.0.0'
+    compile 'javax.servlet:javax.servlet-api:3.1-b07'
+    compile group: 'org.primefaces', name: 'primefaces', version: '6.1'
+
+    //spring
+    compile "org.springframework:spring-core:$versionSpring"
+    compile "org.springframework:spring-context:$versionSpring"
+    compile "org.springframework:spring-web:$versionSpring"
+    compile "org.springframework:spring-webmvc:$versionSpring"
+    compile "org.springframework:spring-jdbc:$versionSpring"
+    compile "org.springframework:spring-test:$versionSpring"
+
+    //mybatis-spring
+    compile "org.mybatis:mybatis-spring:1.3.1"
+
+    //数据库框架
+    compile 'org.mybatis:mybatis:3.4.4'
+    compile 'mysql:mysql-connector-java:5.1.36'
+    compile 'org.mybatis.generator:mybatis-generator-core:1.3.5'
+    compile 'tk.mybatis:mapper:3.4.2'
+
+    //mybatis-spring
+    compile "org.mybatis:mybatis-spring:1.3.1"
+
+}

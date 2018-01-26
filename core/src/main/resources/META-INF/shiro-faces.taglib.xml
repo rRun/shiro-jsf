@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<facelet-taglib xmlns="http://java.sun.com/xml/ns/javaee"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+                version="2.0">
+
+    <namespace>http://fortis.com/tags/jsf/shiro</namespace>
+
+    <tag>
+        <tag-name>principal</tag-name>
+        <component>
+            <component-type>com.fortis.shiro.jsf.tag.PrincipalTag</component-type>
+        </component>
+        <attribute>
+            <description></description>
+            <name>type</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>property</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>defaultValue</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>hasPermission</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.HasPermissionTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>hasAnyPermission</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.HasAnyPermissionTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>lacksPermission</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.LacksPermissionTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>guest</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.GuestTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>user</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.UserTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>authenticated</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.AuthenticatedTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>remembered</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.RememberedTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>notAuthenticated</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.NotAuthenticatedTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>hasRole</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.HasRoleTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>lacksRole</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.LacksRoleTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>hasAnyRoles</tag-name>
+        <handler-class>com.fortis.shiro.jsf.tag.HasAnyRolesTag</handler-class>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+</facelet-taglib>
