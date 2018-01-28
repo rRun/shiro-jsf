@@ -8,6 +8,14 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface HasRoles {
-    String[] value();
-    Logical logical() default Logical.AND;
+  /**
+  * 角色.
+  * @return 角色数组
+  */
+  String[] value();
+  /**
+  * 权限间的逻辑关系
+  * @return 权限逻辑
+  */
+  Logical logical() default Logical.AND;
 }
